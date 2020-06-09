@@ -92,7 +92,7 @@ function grab_html(param, label="None") {
     if ( param == "SEOBNRv4PHM" ) {
         approx = "None" 
     }
-    if ( param == "combined" ) {
+    if ( param == "combinedPHM" ) {
         approx = "None" 
     }
  
