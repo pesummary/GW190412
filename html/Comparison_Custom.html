@@ -300,8 +300,8 @@
                 <ul class='dropdown-menu' aria-labelledby='others'>
                   <li class='dropdown-item' href='#' onclick='grab_html("log_likelihood")'><a>log_likelihood</a></li>
                   <li class='dropdown-item' href='#' onclick='grab_html("phase")'><a>phase</a></li>
-                  <li class='dropdown-item' href='#' onclick='grab_html("chi_2_in_plane")'><a>chi_2_in_plane</a></li>
                   <li class='dropdown-item' href='#' onclick='grab_html("chi_1_in_plane")'><a>chi_1_in_plane</a></li>
+                  <li class='dropdown-item' href='#' onclick='grab_html("chi_2_in_plane")'><a>chi_2_in_plane</a></li>
                 </ul>
               </li>
             </ul>
@@ -329,168 +329,168 @@
 <link rel='stylesheet' href='../css/side_bar.css'>
 <div class='w3-sidebar w3-bar-block w3-border-right sidenav' style='display:none' id='mySidebar'>
   <button onclick='side_bar_close()' class='close'>&times;</button>
-  <input type='checkbox' name='type' value='recalib_V1_frequency_1' id='recalib_V1_frequency_1' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_1<br>
-  <input type='checkbox' name='type' value='recalib_V1_frequency_5' id='recalib_V1_frequency_5' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_5<br>
-  <input type='checkbox' name='type' value='mass_ratio' id='mass_ratio' style='text-align: center; margin: 0 5px 0;'>mass_ratio<br>
-  <input type='checkbox' name='type' value='log_likelihood' id='log_likelihood' style='text-align: center; margin: 0 5px 0;'>log_likelihood<br>
+  <input type='checkbox' name='type' value='comoving_distance' id='comoving_distance' style='text-align: center; margin: 0 5px 0;'>comoving_distance<br>
+  <input type='checkbox' name='type' value='H1_matched_filter_snr' id='H1_matched_filter_snr' style='text-align: center; margin: 0 5px 0;'>H1_matched_filter_snr<br>
+  <input type='checkbox' name='type' value='V1_matched_filter_abs_snr' id='V1_matched_filter_abs_snr' style='text-align: center; margin: 0 5px 0;'>V1_matched_filter_abs_snr<br>
   <input type='checkbox' name='type' value='recalib_V1_frequency_6' id='recalib_V1_frequency_6' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_6<br>
   <input type='checkbox' name='type' value='V1_optimal_snr' id='V1_optimal_snr' style='text-align: center; margin: 0 5px 0;'>V1_optimal_snr<br>
-  <input type='checkbox' name='type' value='recalib_V1_frequency_8' id='recalib_V1_frequency_8' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_8<br>
-  <input type='checkbox' name='type' value='recalib_H1_frequency_4' id='recalib_H1_frequency_4' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_4<br>
-  <input type='checkbox' name='type' value='recalib_H1_frequency_1' id='recalib_H1_frequency_1' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_1<br>
-  <input type='checkbox' name='type' value='recalib_L1_amplitude_0' id='recalib_L1_amplitude_0' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_0<br>
-  <input type='checkbox' name='type' value='recalib_H1_phase_3' id='recalib_H1_phase_3' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_3<br>
-  <input type='checkbox' name='type' value='recalib_H1_phase_6' id='recalib_H1_phase_6' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_6<br>
-  <input type='checkbox' name='type' value='recalib_H1_phase_9' id='recalib_H1_phase_9' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_9<br>
-  <input type='checkbox' name='type' value='chirp_mass_source' id='chirp_mass_source' style='text-align: center; margin: 0 5px 0;'>chirp_mass_source<br>
-  <input type='checkbox' name='type' value='recalib_V1_phase_4' id='recalib_V1_phase_4' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_4<br>
-  <input type='checkbox' name='type' value='recalib_L1_amplitude_4' id='recalib_L1_amplitude_4' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_4<br>
-  <input type='checkbox' name='type' value='recalib_H1_phase_0' id='recalib_H1_phase_0' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_0<br>
+  <input type='checkbox' name='type' value='cos_theta_jn' id='cos_theta_jn' style='text-align: center; margin: 0 5px 0;'>cos_theta_jn<br>
+  <input type='checkbox' name='type' value='recalib_L1_frequency_9' id='recalib_L1_frequency_9' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_9<br>
+  <input type='checkbox' name='type' value='spin_1z' id='spin_1z' style='text-align: center; margin: 0 5px 0;'>spin_1z<br>
+  <input type='checkbox' name='type' value='L1_matched_filter_snr' id='L1_matched_filter_snr' style='text-align: center; margin: 0 5px 0;'>L1_matched_filter_snr<br>
+  <input type='checkbox' name='type' value='recalib_V1_frequency_5' id='recalib_V1_frequency_5' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_5<br>
+  <input type='checkbox' name='type' value='recalib_H1_phase_8' id='recalib_H1_phase_8' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_8<br>
   <input type='checkbox' name='type' value='recalib_V1_phase_1' id='recalib_V1_phase_1' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_1<br>
-  <input type='checkbox' name='type' value='peak_luminosity' id='peak_luminosity' style='text-align: center; margin: 0 5px 0;'>peak_luminosity<br>
-  <input type='checkbox' name='type' value='recalib_H1_phase_4' id='recalib_H1_phase_4' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_4<br>
-  <input type='checkbox' name='type' value='recalib_L1_amplitude_6' id='recalib_L1_amplitude_6' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_6<br>
-  <input type='checkbox' name='type' value='total_mass' id='total_mass' style='text-align: center; margin: 0 5px 0;'>total_mass<br>
-  <input type='checkbox' name='type' value='recalib_L1_amplitude_7' id='recalib_L1_amplitude_7' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_7<br>
-  <input type='checkbox' name='type' value='H1_matched_filter_snr' id='H1_matched_filter_snr' style='text-align: center; margin: 0 5px 0;'>H1_matched_filter_snr<br>
-  <input type='checkbox' name='type' value='recalib_H1_amplitude_3' id='recalib_H1_amplitude_3' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_3<br>
-  <input type='checkbox' name='type' value='L1_matched_filter_abs_snr' id='L1_matched_filter_abs_snr' style='text-align: center; margin: 0 5px 0;'>L1_matched_filter_abs_snr<br>
-  <input type='checkbox' name='type' value='recalib_H1_frequency_0' id='recalib_H1_frequency_0' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_0<br>
-  <input type='checkbox' name='type' value='phi_2' id='phi_2' style='text-align: center; margin: 0 5px 0;'>phi_2<br>
-  <input type='checkbox' name='type' value='H1_optimal_snr' id='H1_optimal_snr' style='text-align: center; margin: 0 5px 0;'>H1_optimal_snr<br>
-  <input type='checkbox' name='type' value='cos_tilt_1' id='cos_tilt_1' style='text-align: center; margin: 0 5px 0;'>cos_tilt_1<br>
-  <input type='checkbox' name='type' value='recalib_H1_frequency_3' id='recalib_H1_frequency_3' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_3<br>
-  <input type='checkbox' name='type' value='final_spin' id='final_spin' style='text-align: center; margin: 0 5px 0;'>final_spin<br>
-  <input type='checkbox' name='type' value='phi_1' id='phi_1' style='text-align: center; margin: 0 5px 0;'>phi_1<br>
-  <input type='checkbox' name='type' value='recalib_L1_frequency_5' id='recalib_L1_frequency_5' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_5<br>
-  <input type='checkbox' name='type' value='recalib_V1_phase_2' id='recalib_V1_phase_2' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_2<br>
-  <input type='checkbox' name='type' value='theta_jn' id='theta_jn' style='text-align: center; margin: 0 5px 0;'>theta_jn<br>
-  <input type='checkbox' name='type' value='recalib_H1_amplitude_1' id='recalib_H1_amplitude_1' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_1<br>
-  <input type='checkbox' name='type' value='recalib_V1_phase_8' id='recalib_V1_phase_8' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_8<br>
-  <input type='checkbox' name='type' value='recalib_V1_phase_5' id='recalib_V1_phase_5' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_5<br>
-  <input type='checkbox' name='type' value='recalib_V1_amplitude_7' id='recalib_V1_amplitude_7' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_7<br>
-  <input type='checkbox' name='type' value='recalib_V1_frequency_0' id='recalib_V1_frequency_0' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_0<br>
-  <input type='checkbox' name='type' value='mass_1' id='mass_1' style='text-align: center; margin: 0 5px 0;'>mass_1<br>
-  <input type='checkbox' name='type' value='spin_2y' id='spin_2y' style='text-align: center; margin: 0 5px 0;'>spin_2y<br>
-  <input type='checkbox' name='type' value='iota' id='iota' style='text-align: center; margin: 0 5px 0;'>iota<br>
-  <input type='checkbox' name='type' value='final_mass_non_evolved' id='final_mass_non_evolved' style='text-align: center; margin: 0 5px 0;'>final_mass_non_evolved<br>
-  <input type='checkbox' name='type' value='recalib_H1_amplitude_0' id='recalib_H1_amplitude_0' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_0<br>
-  <input type='checkbox' name='type' value='total_mass_source' id='total_mass_source' style='text-align: center; margin: 0 5px 0;'>total_mass_source<br>
-  <input type='checkbox' name='type' value='recalib_V1_amplitude_0' id='recalib_V1_amplitude_0' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_0<br>
-  <input type='checkbox' name='type' value='spin_1y' id='spin_1y' style='text-align: center; margin: 0 5px 0;'>spin_1y<br>
-  <input type='checkbox' name='type' value='V1_matched_filter_snr_angle' id='V1_matched_filter_snr_angle' style='text-align: center; margin: 0 5px 0;'>V1_matched_filter_snr_angle<br>
-  <input type='checkbox' name='type' value='recalib_H1_frequency_9' id='recalib_H1_frequency_9' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_9<br>
-  <input type='checkbox' name='type' value='recalib_L1_amplitude_8' id='recalib_L1_amplitude_8' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_8<br>
-  <input type='checkbox' name='type' value='a_1' id='a_1' style='text-align: center; margin: 0 5px 0;'>a_1<br>
-  <input type='checkbox' name='type' value='a_2' id='a_2' style='text-align: center; margin: 0 5px 0;'>a_2<br>
-  <input type='checkbox' name='type' value='phi_jl' id='phi_jl' style='text-align: center; margin: 0 5px 0;'>phi_jl<br>
-  <input type='checkbox' name='type' value='recalib_V1_amplitude_5' id='recalib_V1_amplitude_5' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_5<br>
-  <input type='checkbox' name='type' value='cos_tilt_2' id='cos_tilt_2' style='text-align: center; margin: 0 5px 0;'>cos_tilt_2<br>
-  <input type='checkbox' name='type' value='recalib_V1_frequency_2' id='recalib_V1_frequency_2' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_2<br>
-  <input type='checkbox' name='type' value='recalib_H1_frequency_5' id='recalib_H1_frequency_5' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_5<br>
-  <input type='checkbox' name='type' value='recalib_V1_phase_0' id='recalib_V1_phase_0' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_0<br>
-  <input type='checkbox' name='type' value='recalib_L1_frequency_3' id='recalib_L1_frequency_3' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_3<br>
-  <input type='checkbox' name='type' value='recalib_H1_amplitude_5' id='recalib_H1_amplitude_5' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_5<br>
-  <input type='checkbox' name='type' value='time_jitter' id='time_jitter' style='text-align: center; margin: 0 5px 0;'>time_jitter<br>
-  <input type='checkbox' name='type' value='recalib_H1_amplitude_9' id='recalib_H1_amplitude_9' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_9<br>
-  <input type='checkbox' name='type' value='recalib_V1_amplitude_4' id='recalib_V1_amplitude_4' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_4<br>
-  <input type='checkbox' name='type' value='recalib_H1_phase_5' id='recalib_H1_phase_5' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_5<br>
-  <input type='checkbox' name='type' value='recalib_H1_phase_2' id='recalib_H1_phase_2' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_2<br>
-  <input type='checkbox' name='type' value='chi_eff' id='chi_eff' style='text-align: center; margin: 0 5px 0;'>chi_eff<br>
-  <input type='checkbox' name='type' value='recalib_V1_phase_7' id='recalib_V1_phase_7' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_7<br>
-  <input type='checkbox' name='type' value='recalib_L1_frequency_8' id='recalib_L1_frequency_8' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_8<br>
-  <input type='checkbox' name='type' value='recalib_L1_frequency_1' id='recalib_L1_frequency_1' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_1<br>
+  <input type='checkbox' name='type' value='recalib_H1_phase_6' id='recalib_H1_phase_6' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_6<br>
   <input type='checkbox' name='type' value='recalib_V1_amplitude_1' id='recalib_V1_amplitude_1' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_1<br>
-  <input type='checkbox' name='type' value='L1_optimal_snr' id='L1_optimal_snr' style='text-align: center; margin: 0 5px 0;'>L1_optimal_snr<br>
-  <input type='checkbox' name='type' value='dec' id='dec' style='text-align: center; margin: 0 5px 0;'>dec<br>
+  <input type='checkbox' name='type' value='chi_1_in_plane' id='chi_1_in_plane' style='text-align: center; margin: 0 5px 0;'>chi_1_in_plane<br>
+  <input type='checkbox' name='type' value='recalib_H1_frequency_7' id='recalib_H1_frequency_7' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_7<br>
+  <input type='checkbox' name='type' value='phi_1' id='phi_1' style='text-align: center; margin: 0 5px 0;'>phi_1<br>
+  <input type='checkbox' name='type' value='final_spin_non_evolved' id='final_spin_non_evolved' style='text-align: center; margin: 0 5px 0;'>final_spin_non_evolved<br>
+  <input type='checkbox' name='type' value='phi_12' id='phi_12' style='text-align: center; margin: 0 5px 0;'>phi_12<br>
+  <input type='checkbox' name='type' value='total_mass_source' id='total_mass_source' style='text-align: center; margin: 0 5px 0;'>total_mass_source<br>
+  <input type='checkbox' name='type' value='recalib_H1_amplitude_4' id='recalib_H1_amplitude_4' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_4<br>
+  <input type='checkbox' name='type' value='recalib_H1_frequency_6' id='recalib_H1_frequency_6' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_6<br>
+  <input type='checkbox' name='type' value='theta_jn' id='theta_jn' style='text-align: center; margin: 0 5px 0;'>theta_jn<br>
+  <input type='checkbox' name='type' value='recalib_H1_frequency_2' id='recalib_H1_frequency_2' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_2<br>
+  <input type='checkbox' name='type' value='recalib_H1_amplitude_1' id='recalib_H1_amplitude_1' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_1<br>
+  <input type='checkbox' name='type' value='final_mass_source_non_evolved' id='final_mass_source_non_evolved' style='text-align: center; margin: 0 5px 0;'>final_mass_source_non_evolved<br>
+  <input type='checkbox' name='type' value='final_mass_non_evolved' id='final_mass_non_evolved' style='text-align: center; margin: 0 5px 0;'>final_mass_non_evolved<br>
+  <input type='checkbox' name='type' value='recalib_H1_frequency_8' id='recalib_H1_frequency_8' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_8<br>
+  <input type='checkbox' name='type' value='network_matched_filter_snr' id='network_matched_filter_snr' style='text-align: center; margin: 0 5px 0;'>network_matched_filter_snr<br>
+  <input type='checkbox' name='type' value='recalib_H1_phase_1' id='recalib_H1_phase_1' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_1<br>
+  <input type='checkbox' name='type' value='recalib_L1_phase_7' id='recalib_L1_phase_7' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_7<br>
+  <input type='checkbox' name='type' value='recalib_H1_amplitude_2' id='recalib_H1_amplitude_2' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_2<br>
+  <input type='checkbox' name='type' value='radiated_energy_non_evolved' id='radiated_energy_non_evolved' style='text-align: center; margin: 0 5px 0;'>radiated_energy_non_evolved<br>
+  <input type='checkbox' name='type' value='recalib_V1_frequency_7' id='recalib_V1_frequency_7' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_7<br>
   <input type='checkbox' name='type' value='recalib_L1_frequency_0' id='recalib_L1_frequency_0' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_0<br>
-  <input type='checkbox' name='type' value='recalib_L1_phase_4' id='recalib_L1_phase_4' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_4<br>
-  <input type='checkbox' name='type' value='chirp_mass' id='chirp_mass' style='text-align: center; margin: 0 5px 0;'>chirp_mass<br>
+  <input type='checkbox' name='type' value='recalib_H1_frequency_5' id='recalib_H1_frequency_5' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_5<br>
+  <input type='checkbox' name='type' value='recalib_H1_amplitude_5' id='recalib_H1_amplitude_5' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_5<br>
+  <input type='checkbox' name='type' value='psi' id='psi' style='text-align: center; margin: 0 5px 0;'>psi<br>
+  <input type='checkbox' name='type' value='recalib_L1_phase_6' id='recalib_L1_phase_6' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_6<br>
+  <input type='checkbox' name='type' value='recalib_V1_amplitude_8' id='recalib_V1_amplitude_8' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_8<br>
+  <input type='checkbox' name='type' value='chi_2_in_plane' id='chi_2_in_plane' style='text-align: center; margin: 0 5px 0;'>chi_2_in_plane<br>
+  <input type='checkbox' name='type' value='recalib_H1_frequency_4' id='recalib_H1_frequency_4' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_4<br>
+  <input type='checkbox' name='type' value='recalib_L1_phase_9' id='recalib_L1_phase_9' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_9<br>
+  <input type='checkbox' name='type' value='phi_jl' id='phi_jl' style='text-align: center; margin: 0 5px 0;'>phi_jl<br>
+  <input type='checkbox' name='type' value='recalib_V1_phase_5' id='recalib_V1_phase_5' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_5<br>
+  <input type='checkbox' name='type' value='recalib_L1_frequency_2' id='recalib_L1_frequency_2' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_2<br>
+  <input type='checkbox' name='type' value='recalib_H1_amplitude_3' id='recalib_H1_amplitude_3' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_3<br>
+  <input type='checkbox' name='type' value='spin_2x' id='spin_2x' style='text-align: center; margin: 0 5px 0;'>spin_2x<br>
+  <input type='checkbox' name='type' value='recalib_V1_amplitude_0' id='recalib_V1_amplitude_0' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_0<br>
+  <input type='checkbox' name='type' value='spin_2y' id='spin_2y' style='text-align: center; margin: 0 5px 0;'>spin_2y<br>
+  <input type='checkbox' name='type' value='recalib_L1_amplitude_3' id='recalib_L1_amplitude_3' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_3<br>
+  <input type='checkbox' name='type' value='final_mass_source' id='final_mass_source' style='text-align: center; margin: 0 5px 0;'>final_mass_source<br>
+  <input type='checkbox' name='type' value='recalib_V1_phase_3' id='recalib_V1_phase_3' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_3<br>
+  <input type='checkbox' name='type' value='recalib_L1_amplitude_5' id='recalib_L1_amplitude_5' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_5<br>
+  <input type='checkbox' name='type' value='recalib_V1_frequency_1' id='recalib_V1_frequency_1' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_1<br>
+  <input type='checkbox' name='type' value='chirp_mass_source' id='chirp_mass_source' style='text-align: center; margin: 0 5px 0;'>chirp_mass_source<br>
+  <input type='checkbox' name='type' value='H1_matched_filter_snr_angle' id='H1_matched_filter_snr_angle' style='text-align: center; margin: 0 5px 0;'>H1_matched_filter_snr_angle<br>
+  <input type='checkbox' name='type' value='recalib_L1_frequency_4' id='recalib_L1_frequency_4' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_4<br>
+  <input type='checkbox' name='type' value='phi_2' id='phi_2' style='text-align: center; margin: 0 5px 0;'>phi_2<br>
+  <input type='checkbox' name='type' value='tilt_1' id='tilt_1' style='text-align: center; margin: 0 5px 0;'>tilt_1<br>
+  <input type='checkbox' name='type' value='recalib_H1_frequency_3' id='recalib_H1_frequency_3' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_3<br>
+  <input type='checkbox' name='type' value='recalib_L1_frequency_5' id='recalib_L1_frequency_5' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_5<br>
+  <input type='checkbox' name='type' value='recalib_L1_phase_0' id='recalib_L1_phase_0' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_0<br>
+  <input type='checkbox' name='type' value='recalib_H1_frequency_0' id='recalib_H1_frequency_0' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_0<br>
+  <input type='checkbox' name='type' value='recalib_V1_amplitude_5' id='recalib_V1_amplitude_5' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_5<br>
+  <input type='checkbox' name='type' value='final_spin' id='final_spin' style='text-align: center; margin: 0 5px 0;'>final_spin<br>
+  <input type='checkbox' name='type' value='recalib_V1_amplitude_7' id='recalib_V1_amplitude_7' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_7<br>
+  <input type='checkbox' name='type' value='H1_time' id='H1_time' style='text-align: center; margin: 0 5px 0;'>H1_time<br>
+  <input type='checkbox' name='type' value='recalib_V1_amplitude_4' id='recalib_V1_amplitude_4' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_4<br>
+  <input type='checkbox' name='type' value='final_mass' id='final_mass' style='text-align: center; margin: 0 5px 0;'>final_mass<br>
+  <input type='checkbox' name='type' value='recalib_L1_amplitude_0' id='recalib_L1_amplitude_0' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_0<br>
+  <input type='checkbox' name='type' value='L1_matched_filter_snr_angle' id='L1_matched_filter_snr_angle' style='text-align: center; margin: 0 5px 0;'>L1_matched_filter_snr_angle<br>
+  <input type='checkbox' name='type' value='V1_matched_filter_snr' id='V1_matched_filter_snr' style='text-align: center; margin: 0 5px 0;'>V1_matched_filter_snr<br>
+  <input type='checkbox' name='type' value='recalib_L1_frequency_1' id='recalib_L1_frequency_1' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_1<br>
+  <input type='checkbox' name='type' value='H1_matched_filter_abs_snr' id='H1_matched_filter_abs_snr' style='text-align: center; margin: 0 5px 0;'>H1_matched_filter_abs_snr<br>
+  <input type='checkbox' name='type' value='peak_luminosity' id='peak_luminosity' style='text-align: center; margin: 0 5px 0;'>peak_luminosity<br>
   <input type='checkbox' name='type' value='spin_2z' id='spin_2z' style='text-align: center; margin: 0 5px 0;'>spin_2z<br>
   <input type='checkbox' name='type' value='recalib_V1_frequency_9' id='recalib_V1_frequency_9' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_9<br>
-  <input type='checkbox' name='type' value='recalib_L1_frequency_9' id='recalib_L1_frequency_9' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_9<br>
-  <input type='checkbox' name='type' value='final_mass' id='final_mass' style='text-align: center; margin: 0 5px 0;'>final_mass<br>
-  <input type='checkbox' name='type' value='V1_matched_filter_abs_snr' id='V1_matched_filter_abs_snr' style='text-align: center; margin: 0 5px 0;'>V1_matched_filter_abs_snr<br>
-  <input type='checkbox' name='type' value='chi_p' id='chi_p' style='text-align: center; margin: 0 5px 0;'>chi_p<br>
-  <input type='checkbox' name='type' value='recalib_H1_frequency_7' id='recalib_H1_frequency_7' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_7<br>
-  <input type='checkbox' name='type' value='recalib_L1_phase_0' id='recalib_L1_phase_0' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_0<br>
-  <input type='checkbox' name='type' value='peak_luminosity_non_evolved' id='peak_luminosity_non_evolved' style='text-align: center; margin: 0 5px 0;'>peak_luminosity_non_evolved<br>
-  <input type='checkbox' name='type' value='comoving_distance' id='comoving_distance' style='text-align: center; margin: 0 5px 0;'>comoving_distance<br>
-  <input type='checkbox' name='type' value='spin_2x' id='spin_2x' style='text-align: center; margin: 0 5px 0;'>spin_2x<br>
-  <input type='checkbox' name='type' value='phase' id='phase' style='text-align: center; margin: 0 5px 0;'>phase<br>
-  <input type='checkbox' name='type' value='cos_theta_jn' id='cos_theta_jn' style='text-align: center; margin: 0 5px 0;'>cos_theta_jn<br>
-  <input type='checkbox' name='type' value='recalib_L1_phase_8' id='recalib_L1_phase_8' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_8<br>
-  <input type='checkbox' name='type' value='phi_12' id='phi_12' style='text-align: center; margin: 0 5px 0;'>phi_12<br>
-  <input type='checkbox' name='type' value='recalib_V1_amplitude_8' id='recalib_V1_amplitude_8' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_8<br>
-  <input type='checkbox' name='type' value='recalib_H1_amplitude_8' id='recalib_H1_amplitude_8' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_8<br>
-  <input type='checkbox' name='type' value='radiated_energy' id='radiated_energy' style='text-align: center; margin: 0 5px 0;'>radiated_energy<br>
-  <input type='checkbox' name='type' value='recalib_L1_phase_5' id='recalib_L1_phase_5' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_5<br>
-  <input type='checkbox' name='type' value='symmetric_mass_ratio' id='symmetric_mass_ratio' style='text-align: center; margin: 0 5px 0;'>symmetric_mass_ratio<br>
-  <input type='checkbox' name='type' value='recalib_H1_amplitude_6' id='recalib_H1_amplitude_6' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_6<br>
-  <input type='checkbox' name='type' value='inverted_mass_ratio' id='inverted_mass_ratio' style='text-align: center; margin: 0 5px 0;'>inverted_mass_ratio<br>
-  <input type='checkbox' name='type' value='H1_matched_filter_abs_snr' id='H1_matched_filter_abs_snr' style='text-align: center; margin: 0 5px 0;'>H1_matched_filter_abs_snr<br>
-  <input type='checkbox' name='type' value='cos_iota' id='cos_iota' style='text-align: center; margin: 0 5px 0;'>cos_iota<br>
-  <input type='checkbox' name='type' value='mass_2_source' id='mass_2_source' style='text-align: center; margin: 0 5px 0;'>mass_2_source<br>
-  <input type='checkbox' name='type' value='spin_1x' id='spin_1x' style='text-align: center; margin: 0 5px 0;'>spin_1x<br>
-  <input type='checkbox' name='type' value='luminosity_distance' id='luminosity_distance' style='text-align: center; margin: 0 5px 0;'>luminosity_distance<br>
-  <input type='checkbox' name='type' value='recalib_L1_phase_6' id='recalib_L1_phase_6' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_6<br>
-  <input type='checkbox' name='type' value='tilt_2' id='tilt_2' style='text-align: center; margin: 0 5px 0;'>tilt_2<br>
-  <input type='checkbox' name='type' value='H1_time' id='H1_time' style='text-align: center; margin: 0 5px 0;'>H1_time<br>
-  <input type='checkbox' name='type' value='spin_1z' id='spin_1z' style='text-align: center; margin: 0 5px 0;'>spin_1z<br>
-  <input type='checkbox' name='type' value='L1_time' id='L1_time' style='text-align: center; margin: 0 5px 0;'>L1_time<br>
-  <input type='checkbox' name='type' value='recalib_H1_frequency_8' id='recalib_H1_frequency_8' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_8<br>
-  <input type='checkbox' name='type' value='redshift' id='redshift' style='text-align: center; margin: 0 5px 0;'>redshift<br>
-  <input type='checkbox' name='type' value='H1_matched_filter_snr_angle' id='H1_matched_filter_snr_angle' style='text-align: center; margin: 0 5px 0;'>H1_matched_filter_snr_angle<br>
-  <input type='checkbox' name='type' value='recalib_H1_phase_1' id='recalib_H1_phase_1' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_1<br>
-  <input type='checkbox' name='type' value='recalib_H1_amplitude_2' id='recalib_H1_amplitude_2' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_2<br>
-  <input type='checkbox' name='type' value='recalib_L1_amplitude_1' id='recalib_L1_amplitude_1' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_1<br>
-  <input type='checkbox' name='type' value='psi' id='psi' style='text-align: center; margin: 0 5px 0;'>psi<br>
-  <input type='checkbox' name='type' value='radiated_energy_non_evolved' id='radiated_energy_non_evolved' style='text-align: center; margin: 0 5px 0;'>radiated_energy_non_evolved<br>
-  <input type='checkbox' name='type' value='mass_2' id='mass_2' style='text-align: center; margin: 0 5px 0;'>mass_2<br>
-  <input type='checkbox' name='type' value='recalib_V1_amplitude_6' id='recalib_V1_amplitude_6' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_6<br>
-  <input type='checkbox' name='type' value='final_spin_non_evolved' id='final_spin_non_evolved' style='text-align: center; margin: 0 5px 0;'>final_spin_non_evolved<br>
-  <input type='checkbox' name='type' value='final_mass_source' id='final_mass_source' style='text-align: center; margin: 0 5px 0;'>final_mass_source<br>
+  <input type='checkbox' name='type' value='recalib_L1_amplitude_4' id='recalib_L1_amplitude_4' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_4<br>
   <input type='checkbox' name='type' value='V1_time' id='V1_time' style='text-align: center; margin: 0 5px 0;'>V1_time<br>
-  <input type='checkbox' name='type' value='recalib_L1_phase_7' id='recalib_L1_phase_7' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_7<br>
-  <input type='checkbox' name='type' value='recalib_L1_amplitude_5' id='recalib_L1_amplitude_5' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_5<br>
-  <input type='checkbox' name='type' value='recalib_L1_frequency_4' id='recalib_L1_frequency_4' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_4<br>
-  <input type='checkbox' name='type' value='recalib_L1_amplitude_9' id='recalib_L1_amplitude_9' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_9<br>
-  <input type='checkbox' name='type' value='recalib_L1_phase_2' id='recalib_L1_phase_2' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_2<br>
-  <input type='checkbox' name='type' value='recalib_L1_amplitude_2' id='recalib_L1_amplitude_2' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_2<br>
-  <input type='checkbox' name='type' value='tilt_1' id='tilt_1' style='text-align: center; margin: 0 5px 0;'>tilt_1<br>
-  <input type='checkbox' name='type' value='recalib_L1_frequency_6' id='recalib_L1_frequency_6' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_6<br>
-  <input type='checkbox' name='type' value='recalib_L1_amplitude_3' id='recalib_L1_amplitude_3' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_3<br>
-  <input type='checkbox' name='type' value='recalib_L1_phase_1' id='recalib_L1_phase_1' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_1<br>
-  <input type='checkbox' name='type' value='network_optimal_snr' id='network_optimal_snr' style='text-align: center; margin: 0 5px 0;'>network_optimal_snr<br>
-  <input type='checkbox' name='type' value='recalib_V1_amplitude_2' id='recalib_V1_amplitude_2' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_2<br>
-  <input type='checkbox' name='type' value='mass_1_source' id='mass_1_source' style='text-align: center; margin: 0 5px 0;'>mass_1_source<br>
-  <input type='checkbox' name='type' value='chi_2_in_plane' id='chi_2_in_plane' style='text-align: center; margin: 0 5px 0;'>chi_2_in_plane<br>
-  <input type='checkbox' name='type' value='recalib_V1_phase_9' id='recalib_V1_phase_9' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_9<br>
-  <input type='checkbox' name='type' value='recalib_L1_frequency_2' id='recalib_L1_frequency_2' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_2<br>
-  <input type='checkbox' name='type' value='recalib_V1_frequency_7' id='recalib_V1_frequency_7' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_7<br>
-  <input type='checkbox' name='type' value='chi_1_in_plane' id='chi_1_in_plane' style='text-align: center; margin: 0 5px 0;'>chi_1_in_plane<br>
-  <input type='checkbox' name='type' value='V1_matched_filter_snr' id='V1_matched_filter_snr' style='text-align: center; margin: 0 5px 0;'>V1_matched_filter_snr<br>
-  <input type='checkbox' name='type' value='recalib_V1_phase_6' id='recalib_V1_phase_6' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_6<br>
-  <input type='checkbox' name='type' value='recalib_V1_frequency_4' id='recalib_V1_frequency_4' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_4<br>
-  <input type='checkbox' name='type' value='ra' id='ra' style='text-align: center; margin: 0 5px 0;'>ra<br>
-  <input type='checkbox' name='type' value='geocent_time' id='geocent_time' style='text-align: center; margin: 0 5px 0;'>geocent_time<br>
-  <input type='checkbox' name='type' value='recalib_L1_phase_3' id='recalib_L1_phase_3' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_3<br>
-  <input type='checkbox' name='type' value='L1_matched_filter_snr' id='L1_matched_filter_snr' style='text-align: center; margin: 0 5px 0;'>L1_matched_filter_snr<br>
-  <input type='checkbox' name='type' value='recalib_H1_phase_8' id='recalib_H1_phase_8' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_8<br>
-  <input type='checkbox' name='type' value='recalib_H1_amplitude_7' id='recalib_H1_amplitude_7' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_7<br>
-  <input type='checkbox' name='type' value='recalib_L1_frequency_7' id='recalib_L1_frequency_7' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_7<br>
-  <input type='checkbox' name='type' value='recalib_H1_frequency_2' id='recalib_H1_frequency_2' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_2<br>
-  <input type='checkbox' name='type' value='recalib_L1_phase_9' id='recalib_L1_phase_9' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_9<br>
-  <input type='checkbox' name='type' value='network_matched_filter_snr' id='network_matched_filter_snr' style='text-align: center; margin: 0 5px 0;'>network_matched_filter_snr<br>
-  <input type='checkbox' name='type' value='recalib_H1_amplitude_4' id='recalib_H1_amplitude_4' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_4<br>
-  <input type='checkbox' name='type' value='recalib_V1_amplitude_3' id='recalib_V1_amplitude_3' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_3<br>
-  <input type='checkbox' name='type' value='final_mass_source_non_evolved' id='final_mass_source_non_evolved' style='text-align: center; margin: 0 5px 0;'>final_mass_source_non_evolved<br>
-  <input type='checkbox' name='type' value='recalib_V1_amplitude_9' id='recalib_V1_amplitude_9' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_9<br>
-  <input type='checkbox' name='type' value='recalib_H1_frequency_6' id='recalib_H1_frequency_6' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_6<br>
-  <input type='checkbox' name='type' value='recalib_V1_frequency_3' id='recalib_V1_frequency_3' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_3<br>
   <input type='checkbox' name='type' value='recalib_H1_phase_7' id='recalib_H1_phase_7' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_7<br>
-  <input type='checkbox' name='type' value='recalib_V1_phase_3' id='recalib_V1_phase_3' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_3<br>
-  <input type='checkbox' name='type' value='L1_matched_filter_snr_angle' id='L1_matched_filter_snr_angle' style='text-align: center; margin: 0 5px 0;'>L1_matched_filter_snr_angle<br>
+  <input type='checkbox' name='type' value='recalib_V1_phase_4' id='recalib_V1_phase_4' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_4<br>
+  <input type='checkbox' name='type' value='log_likelihood' id='log_likelihood' style='text-align: center; margin: 0 5px 0;'>log_likelihood<br>
+  <input type='checkbox' name='type' value='recalib_L1_amplitude_9' id='recalib_L1_amplitude_9' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_9<br>
+  <input type='checkbox' name='type' value='recalib_H1_amplitude_7' id='recalib_H1_amplitude_7' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_7<br>
+  <input type='checkbox' name='type' value='recalib_V1_phase_2' id='recalib_V1_phase_2' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_2<br>
+  <input type='checkbox' name='type' value='recalib_L1_frequency_3' id='recalib_L1_frequency_3' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_3<br>
+  <input type='checkbox' name='type' value='mass_1' id='mass_1' style='text-align: center; margin: 0 5px 0;'>mass_1<br>
+  <input type='checkbox' name='type' value='spin_1y' id='spin_1y' style='text-align: center; margin: 0 5px 0;'>spin_1y<br>
+  <input type='checkbox' name='type' value='recalib_L1_amplitude_2' id='recalib_L1_amplitude_2' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_2<br>
+  <input type='checkbox' name='type' value='recalib_L1_phase_3' id='recalib_L1_phase_3' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_3<br>
+  <input type='checkbox' name='type' value='recalib_H1_phase_9' id='recalib_H1_phase_9' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_9<br>
+  <input type='checkbox' name='type' value='recalib_V1_phase_7' id='recalib_V1_phase_7' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_7<br>
+  <input type='checkbox' name='type' value='network_optimal_snr' id='network_optimal_snr' style='text-align: center; margin: 0 5px 0;'>network_optimal_snr<br>
+  <input type='checkbox' name='type' value='recalib_L1_amplitude_6' id='recalib_L1_amplitude_6' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_6<br>
+  <input type='checkbox' name='type' value='recalib_L1_amplitude_1' id='recalib_L1_amplitude_1' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_1<br>
+  <input type='checkbox' name='type' value='recalib_V1_phase_9' id='recalib_V1_phase_9' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_9<br>
+  <input type='checkbox' name='type' value='recalib_H1_amplitude_8' id='recalib_H1_amplitude_8' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_8<br>
+  <input type='checkbox' name='type' value='V1_matched_filter_snr_angle' id='V1_matched_filter_snr_angle' style='text-align: center; margin: 0 5px 0;'>V1_matched_filter_snr_angle<br>
+  <input type='checkbox' name='type' value='radiated_energy' id='radiated_energy' style='text-align: center; margin: 0 5px 0;'>radiated_energy<br>
+  <input type='checkbox' name='type' value='mass_2' id='mass_2' style='text-align: center; margin: 0 5px 0;'>mass_2<br>
+  <input type='checkbox' name='type' value='recalib_V1_amplitude_3' id='recalib_V1_amplitude_3' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_3<br>
+  <input type='checkbox' name='type' value='chi_p' id='chi_p' style='text-align: center; margin: 0 5px 0;'>chi_p<br>
+  <input type='checkbox' name='type' value='L1_matched_filter_abs_snr' id='L1_matched_filter_abs_snr' style='text-align: center; margin: 0 5px 0;'>L1_matched_filter_abs_snr<br>
+  <input type='checkbox' name='type' value='recalib_V1_phase_0' id='recalib_V1_phase_0' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_0<br>
+  <input type='checkbox' name='type' value='recalib_V1_frequency_0' id='recalib_V1_frequency_0' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_0<br>
+  <input type='checkbox' name='type' value='recalib_V1_phase_6' id='recalib_V1_phase_6' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_6<br>
+  <input type='checkbox' name='type' value='recalib_V1_phase_8' id='recalib_V1_phase_8' style='text-align: center; margin: 0 5px 0;'>recalib_V1_phase_8<br>
+  <input type='checkbox' name='type' value='inverted_mass_ratio' id='inverted_mass_ratio' style='text-align: center; margin: 0 5px 0;'>inverted_mass_ratio<br>
+  <input type='checkbox' name='type' value='ra' id='ra' style='text-align: center; margin: 0 5px 0;'>ra<br>
+  <input type='checkbox' name='type' value='symmetric_mass_ratio' id='symmetric_mass_ratio' style='text-align: center; margin: 0 5px 0;'>symmetric_mass_ratio<br>
+  <input type='checkbox' name='type' value='H1_optimal_snr' id='H1_optimal_snr' style='text-align: center; margin: 0 5px 0;'>H1_optimal_snr<br>
+  <input type='checkbox' name='type' value='dec' id='dec' style='text-align: center; margin: 0 5px 0;'>dec<br>
+  <input type='checkbox' name='type' value='recalib_L1_frequency_7' id='recalib_L1_frequency_7' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_7<br>
+  <input type='checkbox' name='type' value='total_mass' id='total_mass' style='text-align: center; margin: 0 5px 0;'>total_mass<br>
+  <input type='checkbox' name='type' value='a_2' id='a_2' style='text-align: center; margin: 0 5px 0;'>a_2<br>
+  <input type='checkbox' name='type' value='mass_ratio' id='mass_ratio' style='text-align: center; margin: 0 5px 0;'>mass_ratio<br>
+  <input type='checkbox' name='type' value='recalib_V1_amplitude_9' id='recalib_V1_amplitude_9' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_9<br>
+  <input type='checkbox' name='type' value='recalib_V1_amplitude_6' id='recalib_V1_amplitude_6' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_6<br>
+  <input type='checkbox' name='type' value='spin_1x' id='spin_1x' style='text-align: center; margin: 0 5px 0;'>spin_1x<br>
+  <input type='checkbox' name='type' value='recalib_H1_phase_2' id='recalib_H1_phase_2' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_2<br>
+  <input type='checkbox' name='type' value='recalib_V1_frequency_8' id='recalib_V1_frequency_8' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_8<br>
+  <input type='checkbox' name='type' value='recalib_V1_frequency_2' id='recalib_V1_frequency_2' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_2<br>
+  <input type='checkbox' name='type' value='time_jitter' id='time_jitter' style='text-align: center; margin: 0 5px 0;'>time_jitter<br>
+  <input type='checkbox' name='type' value='tilt_2' id='tilt_2' style='text-align: center; margin: 0 5px 0;'>tilt_2<br>
+  <input type='checkbox' name='type' value='recalib_L1_amplitude_7' id='recalib_L1_amplitude_7' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_7<br>
+  <input type='checkbox' name='type' value='a_1' id='a_1' style='text-align: center; margin: 0 5px 0;'>a_1<br>
+  <input type='checkbox' name='type' value='recalib_L1_phase_8' id='recalib_L1_phase_8' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_8<br>
+  <input type='checkbox' name='type' value='recalib_L1_phase_4' id='recalib_L1_phase_4' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_4<br>
+  <input type='checkbox' name='type' value='recalib_H1_phase_5' id='recalib_H1_phase_5' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_5<br>
+  <input type='checkbox' name='type' value='recalib_L1_phase_2' id='recalib_L1_phase_2' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_2<br>
+  <input type='checkbox' name='type' value='mass_1_source' id='mass_1_source' style='text-align: center; margin: 0 5px 0;'>mass_1_source<br>
+  <input type='checkbox' name='type' value='recalib_L1_phase_5' id='recalib_L1_phase_5' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_5<br>
+  <input type='checkbox' name='type' value='recalib_H1_phase_3' id='recalib_H1_phase_3' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_3<br>
+  <input type='checkbox' name='type' value='recalib_L1_frequency_8' id='recalib_L1_frequency_8' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_8<br>
+  <input type='checkbox' name='type' value='chi_eff' id='chi_eff' style='text-align: center; margin: 0 5px 0;'>chi_eff<br>
+  <input type='checkbox' name='type' value='recalib_H1_frequency_9' id='recalib_H1_frequency_9' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_9<br>
+  <input type='checkbox' name='type' value='recalib_L1_frequency_6' id='recalib_L1_frequency_6' style='text-align: center; margin: 0 5px 0;'>recalib_L1_frequency_6<br>
+  <input type='checkbox' name='type' value='L1_time' id='L1_time' style='text-align: center; margin: 0 5px 0;'>L1_time<br>
+  <input type='checkbox' name='type' value='L1_optimal_snr' id='L1_optimal_snr' style='text-align: center; margin: 0 5px 0;'>L1_optimal_snr<br>
+  <input type='checkbox' name='type' value='recalib_H1_phase_4' id='recalib_H1_phase_4' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_4<br>
+  <input type='checkbox' name='type' value='recalib_H1_amplitude_6' id='recalib_H1_amplitude_6' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_6<br>
+  <input type='checkbox' name='type' value='recalib_H1_amplitude_9' id='recalib_H1_amplitude_9' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_9<br>
+  <input type='checkbox' name='type' value='cos_iota' id='cos_iota' style='text-align: center; margin: 0 5px 0;'>cos_iota<br>
+  <input type='checkbox' name='type' value='luminosity_distance' id='luminosity_distance' style='text-align: center; margin: 0 5px 0;'>luminosity_distance<br>
+  <input type='checkbox' name='type' value='redshift' id='redshift' style='text-align: center; margin: 0 5px 0;'>redshift<br>
+  <input type='checkbox' name='type' value='peak_luminosity_non_evolved' id='peak_luminosity_non_evolved' style='text-align: center; margin: 0 5px 0;'>peak_luminosity_non_evolved<br>
+  <input type='checkbox' name='type' value='recalib_H1_frequency_1' id='recalib_H1_frequency_1' style='text-align: center; margin: 0 5px 0;'>recalib_H1_frequency_1<br>
+  <input type='checkbox' name='type' value='recalib_V1_frequency_4' id='recalib_V1_frequency_4' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_4<br>
+  <input type='checkbox' name='type' value='recalib_V1_amplitude_2' id='recalib_V1_amplitude_2' style='text-align: center; margin: 0 5px 0;'>recalib_V1_amplitude_2<br>
+  <input type='checkbox' name='type' value='iota' id='iota' style='text-align: center; margin: 0 5px 0;'>iota<br>
+  <input type='checkbox' name='type' value='mass_2_source' id='mass_2_source' style='text-align: center; margin: 0 5px 0;'>mass_2_source<br>
+  <input type='checkbox' name='type' value='chirp_mass' id='chirp_mass' style='text-align: center; margin: 0 5px 0;'>chirp_mass<br>
+  <input type='checkbox' name='type' value='recalib_L1_phase_1' id='recalib_L1_phase_1' style='text-align: center; margin: 0 5px 0;'>recalib_L1_phase_1<br>
+  <input type='checkbox' name='type' value='cos_tilt_1' id='cos_tilt_1' style='text-align: center; margin: 0 5px 0;'>cos_tilt_1<br>
+  <input type='checkbox' name='type' value='recalib_V1_frequency_3' id='recalib_V1_frequency_3' style='text-align: center; margin: 0 5px 0;'>recalib_V1_frequency_3<br>
+  <input type='checkbox' name='type' value='recalib_H1_amplitude_0' id='recalib_H1_amplitude_0' style='text-align: center; margin: 0 5px 0;'>recalib_H1_amplitude_0<br>
+  <input type='checkbox' name='type' value='geocent_time' id='geocent_time' style='text-align: center; margin: 0 5px 0;'>geocent_time<br>
+  <input type='checkbox' name='type' value='recalib_L1_amplitude_8' id='recalib_L1_amplitude_8' style='text-align: center; margin: 0 5px 0;'>recalib_L1_amplitude_8<br>
+  <input type='checkbox' name='type' value='recalib_H1_phase_0' id='recalib_H1_phase_0' style='text-align: center; margin: 0 5px 0;'>recalib_H1_phase_0<br>
+  <input type='checkbox' name='type' value='cos_tilt_2' id='cos_tilt_2' style='text-align: center; margin: 0 5px 0;'>cos_tilt_2<br>
+  <input type='checkbox' name='type' value='phase' id='phase' style='text-align: center; margin: 0 5px 0;'>phase<br>
 </div>
 <div class='row justify-content-center'>
   <p style='margin-top:2.5em; font-family: Arial-body; font-size:14px'> Input the parameter names that you would like to compare</p>
@@ -501,7 +501,7 @@
   <button class='w3-button w3-teal w3-xlarge' onclick='side_bar_open()' style='cursor: pointer'>&#8801</button>
 </div>
 <div class='row justify-content-center'>
-  <button type='button' class='btn btn-info' onclick='combines("recalib_V1_frequency_1, recalib_V1_frequency_5, mass_ratio, log_likelihood, recalib_V1_frequency_6, V1_optimal_snr, recalib_V1_frequency_8, recalib_H1_frequency_4, recalib_H1_frequency_1, recalib_L1_amplitude_0, recalib_H1_phase_3, recalib_H1_phase_6, recalib_H1_phase_9, chirp_mass_source, recalib_V1_phase_4, recalib_L1_amplitude_4, recalib_H1_phase_0, recalib_V1_phase_1, peak_luminosity, recalib_H1_phase_4, recalib_L1_amplitude_6, total_mass, recalib_L1_amplitude_7, H1_matched_filter_snr, recalib_H1_amplitude_3, L1_matched_filter_abs_snr, recalib_H1_frequency_0, phi_2, H1_optimal_snr, cos_tilt_1, recalib_H1_frequency_3, final_spin, phi_1, recalib_L1_frequency_5, recalib_V1_phase_2, theta_jn, recalib_H1_amplitude_1, recalib_V1_phase_8, recalib_V1_phase_5, recalib_V1_amplitude_7, recalib_V1_frequency_0, mass_1, spin_2y, iota, final_mass_non_evolved, recalib_H1_amplitude_0, total_mass_source, recalib_V1_amplitude_0, spin_1y, V1_matched_filter_snr_angle, recalib_H1_frequency_9, recalib_L1_amplitude_8, a_1, a_2, phi_jl, recalib_V1_amplitude_5, cos_tilt_2, recalib_V1_frequency_2, recalib_H1_frequency_5, recalib_V1_phase_0, recalib_L1_frequency_3, recalib_H1_amplitude_5, time_jitter, recalib_H1_amplitude_9, recalib_V1_amplitude_4, recalib_H1_phase_5, recalib_H1_phase_2, chi_eff, recalib_V1_phase_7, recalib_L1_frequency_8, recalib_L1_frequency_1, recalib_V1_amplitude_1, L1_optimal_snr, dec, recalib_L1_frequency_0, recalib_L1_phase_4, chirp_mass, spin_2z, recalib_V1_frequency_9, recalib_L1_frequency_9, final_mass, V1_matched_filter_abs_snr, chi_p, recalib_H1_frequency_7, recalib_L1_phase_0, peak_luminosity_non_evolved, comoving_distance, spin_2x, phase, cos_theta_jn, recalib_L1_phase_8, phi_12, recalib_V1_amplitude_8, recalib_H1_amplitude_8, radiated_energy, recalib_L1_phase_5, symmetric_mass_ratio, recalib_H1_amplitude_6, inverted_mass_ratio, H1_matched_filter_abs_snr, cos_iota, mass_2_source, spin_1x, luminosity_distance, recalib_L1_phase_6, tilt_2, H1_time, spin_1z, L1_time, recalib_H1_frequency_8, redshift, H1_matched_filter_snr_angle, recalib_H1_phase_1, recalib_H1_amplitude_2, recalib_L1_amplitude_1, psi, radiated_energy_non_evolved, mass_2, recalib_V1_amplitude_6, final_spin_non_evolved, final_mass_source, V1_time, recalib_L1_phase_7, recalib_L1_amplitude_5, recalib_L1_frequency_4, recalib_L1_amplitude_9, recalib_L1_phase_2, recalib_L1_amplitude_2, tilt_1, recalib_L1_frequency_6, recalib_L1_amplitude_3, recalib_L1_phase_1, network_optimal_snr, recalib_V1_amplitude_2, mass_1_source, chi_2_in_plane, recalib_V1_phase_9, recalib_L1_frequency_2, recalib_V1_frequency_7, chi_1_in_plane, V1_matched_filter_snr, recalib_V1_phase_6, recalib_V1_frequency_4, ra, geocent_time, recalib_L1_phase_3, L1_matched_filter_snr, recalib_H1_phase_8, recalib_H1_amplitude_7, recalib_L1_frequency_7, recalib_H1_frequency_2, recalib_L1_phase_9, network_matched_filter_snr, recalib_H1_amplitude_4, recalib_V1_amplitude_3, final_mass_source_non_evolved, recalib_V1_amplitude_9, recalib_H1_frequency_6, recalib_V1_frequency_3, recalib_H1_phase_7, recalib_V1_phase_3, L1_matched_filter_snr_angle", label="None")' style='margin-left:0.25em; margin-right:0.25em; margin-top: 1.0em; cursor: pointer'>all</button>
+  <button type='button' class='btn btn-info' onclick='combines("comoving_distance, H1_matched_filter_snr, V1_matched_filter_abs_snr, recalib_V1_frequency_6, V1_optimal_snr, cos_theta_jn, recalib_L1_frequency_9, spin_1z, L1_matched_filter_snr, recalib_V1_frequency_5, recalib_H1_phase_8, recalib_V1_phase_1, recalib_H1_phase_6, recalib_V1_amplitude_1, chi_1_in_plane, recalib_H1_frequency_7, phi_1, final_spin_non_evolved, phi_12, total_mass_source, recalib_H1_amplitude_4, recalib_H1_frequency_6, theta_jn, recalib_H1_frequency_2, recalib_H1_amplitude_1, final_mass_source_non_evolved, final_mass_non_evolved, recalib_H1_frequency_8, network_matched_filter_snr, recalib_H1_phase_1, recalib_L1_phase_7, recalib_H1_amplitude_2, radiated_energy_non_evolved, recalib_V1_frequency_7, recalib_L1_frequency_0, recalib_H1_frequency_5, recalib_H1_amplitude_5, psi, recalib_L1_phase_6, recalib_V1_amplitude_8, chi_2_in_plane, recalib_H1_frequency_4, recalib_L1_phase_9, phi_jl, recalib_V1_phase_5, recalib_L1_frequency_2, recalib_H1_amplitude_3, spin_2x, recalib_V1_amplitude_0, spin_2y, recalib_L1_amplitude_3, final_mass_source, recalib_V1_phase_3, recalib_L1_amplitude_5, recalib_V1_frequency_1, chirp_mass_source, H1_matched_filter_snr_angle, recalib_L1_frequency_4, phi_2, tilt_1, recalib_H1_frequency_3, recalib_L1_frequency_5, recalib_L1_phase_0, recalib_H1_frequency_0, recalib_V1_amplitude_5, final_spin, recalib_V1_amplitude_7, H1_time, recalib_V1_amplitude_4, final_mass, recalib_L1_amplitude_0, L1_matched_filter_snr_angle, V1_matched_filter_snr, recalib_L1_frequency_1, H1_matched_filter_abs_snr, peak_luminosity, spin_2z, recalib_V1_frequency_9, recalib_L1_amplitude_4, V1_time, recalib_H1_phase_7, recalib_V1_phase_4, log_likelihood, recalib_L1_amplitude_9, recalib_H1_amplitude_7, recalib_V1_phase_2, recalib_L1_frequency_3, mass_1, spin_1y, recalib_L1_amplitude_2, recalib_L1_phase_3, recalib_H1_phase_9, recalib_V1_phase_7, network_optimal_snr, recalib_L1_amplitude_6, recalib_L1_amplitude_1, recalib_V1_phase_9, recalib_H1_amplitude_8, V1_matched_filter_snr_angle, radiated_energy, mass_2, recalib_V1_amplitude_3, chi_p, L1_matched_filter_abs_snr, recalib_V1_phase_0, recalib_V1_frequency_0, recalib_V1_phase_6, recalib_V1_phase_8, inverted_mass_ratio, ra, symmetric_mass_ratio, H1_optimal_snr, dec, recalib_L1_frequency_7, total_mass, a_2, mass_ratio, recalib_V1_amplitude_9, recalib_V1_amplitude_6, spin_1x, recalib_H1_phase_2, recalib_V1_frequency_8, recalib_V1_frequency_2, time_jitter, tilt_2, recalib_L1_amplitude_7, a_1, recalib_L1_phase_8, recalib_L1_phase_4, recalib_H1_phase_5, recalib_L1_phase_2, mass_1_source, recalib_L1_phase_5, recalib_H1_phase_3, recalib_L1_frequency_8, chi_eff, recalib_H1_frequency_9, recalib_L1_frequency_6, L1_time, L1_optimal_snr, recalib_H1_phase_4, recalib_H1_amplitude_6, recalib_H1_amplitude_9, cos_iota, luminosity_distance, redshift, peak_luminosity_non_evolved, recalib_H1_frequency_1, recalib_V1_frequency_4, recalib_V1_amplitude_2, iota, mass_2_source, chirp_mass, recalib_L1_phase_1, cos_tilt_1, recalib_V1_frequency_3, recalib_H1_amplitude_0, geocent_time, recalib_L1_amplitude_8, recalib_H1_phase_0, cos_tilt_2, phase", label="None")' style='margin-left:0.25em; margin-right:0.25em; margin-top: 1.0em; cursor: pointer'>all</button>
 </div>
 <div class='container' style='margin-top:3em; margin-bottom:5em; background-color:#FFFFFF; box-shadow: 0 0 5px grey; max-width: 1400px'>
   <div class='row justify-content-center' id='corner_plot'>
@@ -518,14 +518,14 @@
   <div class='row'>
     <div class='col-sm-4 icon-bar'>
       <div class='icon'>
-<a href='https://git.ligo.org/lscsoft/pesummary/tree/v0.5.6' data-toggle='tooltip' title='View PESummary-v0.5.6'><i class='fa fa-code' style='font-size: 30px; color: #E8E8E8; font-weight: 900; padding-right:10px'></i></a>
+<a href='https://git.ligo.org/lscsoft/pesummary/tree/v0.6.0' data-toggle='tooltip' title='View PESummary-v0.6.0'><i class='fa fa-code' style='font-size: 30px; color: #E8E8E8; font-weight: 900; padding-right:10px'></i></a>
 <a href='https://git.ligo.org/lscsoft/pesummary/issues' data-toggle='tooltip' title='Open an issue ticket'><i class='fa fa-ticket' style='font-size: 30px; color: #E8E8E8; font-weight: 900; padding-right:10px'></i></a>
 <a href='https://lscsoft.docs.ligo.org/pesummary/' data-toggle='tooltip' title='View the docs!'><i class='fa fa-book' style='font-size: 30px; color: #E8E8E8; font-weight: 900; padding-right:10px'></i></a>
 <a href='https://lscsoft.docs.ligo.org/pesummary/stable_docs/tutorials/make_your_own_page_from_metafile.html' data-toggle='tooltip' title='Make your own page'><i class='fa fa-window-restore' style='font-size: 30px; color: #E8E8E8; font-weight: 900; padding-right:10px'></i></a>
       </div>
     </div>
     <div class='col-sm-7'>
-<p style='color: #E8E8E8; font-weight: bold; font-family: arial-body; margin-top:14px'>This page was produced by charlie.hoy at 14:29 on June 09 2020</p>
+<p style='color: #E8E8E8; font-weight: bold; font-family: arial-body; margin-top:14px'>This page was produced by charlie.hoy at 13:03 on June 11 2020</p>
     </div>
   </div>
 </div>
